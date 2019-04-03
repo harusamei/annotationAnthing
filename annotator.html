@@ -1,0 +1,63 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+    <title>annotation anything</title>
+    <style type="text/css">
+        .annotation {color:blue}
+    </style>
+
+</head>
+<body>
+    <!-- Insert your content here -->   
+    <div id="for my JS">
+        <div style="display:none" id="PUB_YOYAKU">place to sub/pub events</div>
+        <div style="display: none" id="TXNODES_ARRAY"></div>
+        <div style="display:none" class="notation-panel">
+            <h1 class="notation-panel-words" notationId="-1"></h1>
+            <div class="notation-panel-input">
+                <p>释义</p>
+                <textarea class="notation-panel-zhushi" rows="2"></textarea>
+            </div>
+            <div class="notation-panel-input">
+                <p>备注</p>
+                <textarea class="notation-panel-beizhu" rows="7"></textarea>
+            </div>
+            <p class="notation-panel-ops">
+                <input type="button" class="notation-panel-dictionary" value="查字典" style="color: #3f6bb8;cursor: pointer;background-color:#fff;border:none;outline:none;"/>
+            </p>
+            <div class="notation-panel-btns">
+                <button class="notation-panel-ok" articleId="articleId" api="/mark/new/create">保存</button>
+                <button class="notation-panel-cancel">取消</button>
+            </div>
+            <div id="notationPositions" style="display:none"></div>
+        </div>
+        <div class="mask" style="display:block"></div>
+    </div>
+    <div class="article-root">
+        <div id="annotation-content"> <!-- id不是必需，只是说明-->
+            <h1>Taken for a ride 乘车兜风</h1>
+            <div>
+                <strong>First listen and then answer the question.</strong>
+                <h2>Why did the writer not get off the <em>公共汽车</em></h2> at Woodford Green?
+                <div> <p>I love travelling in the country</p>, but I don’t like losing my way.<br>
+                I went on an excursion recently, but my trip took me longer than I expected.<br>
+                ‘I’m going to Woodford Green,’ I said to the conductor as I got on the bus, ‘but I don’t know where it is.’
+                ‘I’ll tell you where to get off.’ answered the conductor.<br/>
+                </div>
+                <div>
+                <p>I sat in the front of the bus to get a good view of the countryside. </p>After some time, the bus stopped. Looking round, I realized with a shock that I was the only passenger left on the bus.
+               ‘You’ll have to get off here,’ the conductor said. ‘This is as far as we go.’<br>
+                ‘Is this Woodford Green?’ I asked.<br>
+               ‘Oh dear,’ said the conductor suddenly. ‘I forgot to put you off.’<br>
+                ‘It doesn’t matter,’ I said. ‘I’ll get off here.’<br>
+                ‘We’re going back now,’ said the conductor.<br>
+               ‘Well, in that case, I prefer to stay on the bus,’ I answered.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="notation1.js"></script>
+</body>
+</html>
